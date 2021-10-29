@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>       
+        <meta charset="utf-8">
+        <title>Ejemplo del uso de formularios </title>
+    </head>
+<body>
+
+
+<p>
+
+<label for="nombre">Nombre: </label>
+
+<input type="text" name="nombre" id="nombre">
+
+<br/> <br/>
+
+<label for="apellido">Apellido: </label>
+
+<input type="text" name="apellido" id="apellido">
+
+<br/> <br/>
+
+<label for="email">Email: </label>
+
+<input type="text" name="email" id="email">
+
+<br/> <br/>
+
+<input type="radio" name="sexo" id="varon" value="Varón">
+
+<label for="varon">Varón: </label>
+
+<br/> <br/>
+
+<input type="radio" name="sexo" id="mujer" value="Mujer">
+
+<label for="mujer">Mujer: </label>
+
+<br/> <br/>
+
+<input type="submit" value="Enviar">
+
+<input type="reset">
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>Dirección de correo electrónico: <input type="email" name="direccionemail" value="loquesea@gmail.com"></p>
+
+  <p>
+
+
+  </p>
+
+</form>
+
+</p>
+
+    <form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Sitio web: <input type="url" name="sitioweb" placeholder="¿Tienes un sitio web?">
+
+    <input type="submit" value="Enviar datos">
+
+  </p>
+
+<form name="formulario" method="post" action="/send.php">
+  <!-- Campo de entrada de mes -->
+  Selecciona el mes deseado:
+  <input type="month" name="mes"
+         value="2018-05" min="2018-02" max="2018-06" step="2" />
+  <!-- Campo de entrada de semana -->
+  Selecciona la semana deseada:
+  <input type="week" name="semana"
+         value="2018-W18" min="2018-W10" max="2018-W20" step="2" />
+</form>
+
+    <label for="tentacles">selecciona minutos (10-100):</label>
+
+<input type="number" id="tentacles" name="tentacles"
+       min="10" max="100">
+
+</form>
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Teléfono: <input type="tel" name="telefono" placeholder="(Código de área) Número">
+
+    <input type="submit" value="Enviar datos">
+
+  </p>
+
+</form>
+
+<form action="../../form-result.php" method="post" target="_blank">
+
+  <p>
+
+    Término de busqueda: <input type="search" name="busquedamusica" placeholder="cualquier cosa">
+
+    <input type="submit" value="Buscar">
+
+  </p>
+
+</form>
+
+<form name="formulario" method="post" action="http://pagina.com/send.php">
+  <!-- Selección de color -->
+  Selecciona el color deseado:
+  <!-- Color verde por defecto HEX(1B, F4, 4A) -->
+  <input type="color" name="color" value="#1BF44A" />
+</form>
+
+</form>
+
+</body>
+
+</html>
